@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Metadata and Responsive Setup -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Muiruri Alex</title>
+
+  <!-- Font Awesome for icons (if needed in future) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Internal CSS Styling -->
+  <style>
+    /* Base Styling */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Page Header */
+    h1 {
+      color: #e50914;
+      text-align: center;
+      font-size: 3rem;
+      margin-top: 30px;
+    }
+
+    /* Grid Container for Project Cards */
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Individual Project Card */
+    .project-card {
+      background-color: #141414;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
+    }
+
+    /* Hover Effect for Card */
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Project Thumbnail Image */
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* Project Description Section */
+    .project-content {
+      padding: 20px;
+    }
+
+    /* Project Title */
+    .project-title {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    /* Project Description Text */
+    .project-description {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 15px;
+    }
+
+    /* GitHub Link Button */
+    .project-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #e50914;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .project-link:hover {
+      background-color: #b20710;
+    }
+
+    /* Back Button Styling */
+    .back-btn {
+      display: block;
+      text-align: center;
+      margin: 20px auto;
+      text-decoration: none;
+      color: white;
+      background: #e50914;
+      padding: 10px 20px;
+      border-radius: 8px;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Header -->
+  <h1>My Featured Projects</h1>
+
+  <!-- Grid of Project Cards -->
+  <div class="projects-container">
+
+    <!-- Project 1: PLC Extrusion Machine (No GitHub link shown) -->
+    <div class="project-card">
+      <img class="project-image" src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Plastic Extrusion Machine">
+      <div class="project-content">
+        <div class="project-title">PLC-Based Plastic Extrusion Machine</div>
+        <div class="project-description">
+          A real-world industrial automation system using PLCs to control a plastic extrusion process, with temperature regulation and ON/OFF + analog control modes.
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2: Iris ML Classification -->
+    <div class="project-card">
+      <img class="project-image" src="https://images.unsplash.com/photo-1557562645-4eee56b29bc1?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Iris Classification">
+      <div class="project-content">
+        <div class="project-title">Iris Classification with ML</div>
+        <div class="project-description">
+          Implemented a classic machine learning model using Python and scikit-learn to classify iris flower species based on petal/sepal measurements.
+        </div>
+        <a href="https://github.com/laywright/Iris.git" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+    <!-- Project 3: Netflix-Inspired Portfolio Website -->
+    <div class="project-card">
+      <img class="project-image" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TmV0ZmxpeHxlbnwwfHwwfHx8MA%3D%3D" alt="Netflix Portfolio UI">
+      <div class="project-content">
+        <div class="project-title">Netflix-Inspired Portfolio</div>
+        <div class="project-description">
+          A creative portfolio website with UI/UX inspired by Netflix, featuring profile selection, interactive dashboard, project modals, and light/dark mode toggle.
+        </div>
+        <a href="https://github.com/laywright/netflix-portfolio-showcase" class="project-link" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Back Navigation -->
+  <a href="index.html" class="back-btn">← Back to Home</a>
+
+</body>
+</html>

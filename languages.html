@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta settings for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Programming Languages | Muiruri Alex</title>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Internal CSS styling -->
+    <style>
+        /* Basic body styling */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page title styling */
+        h1 {
+            color: #e50914;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-top: 30px;
+        }
+
+        /* Container for all language cards */
+        .languages-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        /* Styling each individual language card */
+        .language-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+            width: 250px;
+        }
+
+        /* Hover effect for language cards */
+        .language-card:hover {
+            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Icon styling inside the cards */
+        .language-card i {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        /* Language name text styling */
+        .language-card span {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Proficiency bar background */
+        .proficiency-bar {
+            background-color: rgba(255, 255, 255, 0.3);
+            height: 10px;
+            width: 100%;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Proficiency level indicator (the fill) */
+        .proficiency-level {
+            height: 100%;
+            background-color: #e50914;
+            border-radius: 5px;
+            transition: width 1.5s ease-in-out;
+        }
+
+        /* Back button to return to home */
+        .back-btn {
+            margin-top: 40px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: 0.3s;
+            display: inline-block;
+            background: #e50914;
+        }
+
+        /* Hover effect for back button */
+        .back-btn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page header -->
+    <h1>Programming Languages</h1>
+
+    <!-- Container holding all programming language cards -->
+    <div class="languages-container">
+
+        <!-- Python card -->
+        <div class="language-card" style="background-color: #1e88e5;">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+            <div class="proficiency-bar">
+                <div class="proficiency-level" style="width: 85%;"></div>
+            </div>
+            <p>85% Proficient</p>
+        </div>
+
+        <!-- HTML card -->
+        <div class="language-card" style="background-color: #e44d26;">
+            <i class="fab fa-html5"></i>
+            <span>HTML</span>
+            <div class="proficiency-bar">
+                <div class="proficiency-level" style="width: 70%;"></div>
+            </div>
+            <p>70% Proficient</p>
+        </div>
+
+        <!-- CSS card -->
+        <div class="language-card" style="background-color: #1572b6;">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS</span>
+            <div class="proficiency-bar">
+                <div class="proficiency-level" style="width: 67%;"></div>
+            </div>
+            <p>67% Proficient</p>
+        </div>
+
+        <!-- C++ card -->
+        <div class="language-card" style="background-color: #f89820;">
+            <i class="fas fa-c"></i>
+            <span>C++</span>
+            <div class="proficiency-bar">
+                <div class="proficiency-level" style="width: 75%;"></div>
+            </div>
+            <p>75% Proficient</p>
+        </div>
+
+    </div>
+
+    <!-- Back button that takes user to home page -->
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+</body>
+</html>

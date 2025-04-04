@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education - Muiruri Alex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #e50914;
+      font-size: 3rem;
+      text-shadow: 0 0 20px rgba(229, 9, 20, 0.5);
+      margin: 0;
+    }
+
+    /* Vertical Timeline Container */
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    /* The vertical line */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #e50914;
+      top: 0;
+      bottom: 0;
+      left: 30px;
+      margin-left: -2px;
+    }
+
+    /* Container for each entry */
+    .timeline-item {
+      padding: 20px 40px;
+      position: relative;
+      background: #1c1c1c;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .timeline-item:hover {
+      transform: scale(1.02);
+    }
+
+    /* Circle indicator */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      right: auto;
+      left: 21px;
+      background-color: #e50914;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      top: 24px;
+      z-index: 1;
+    }
+
+    .timeline-icon {
+      font-size: 2rem;
+      color: #e50914;
+      margin-bottom: 10px;
+    }
+
+    .timeline-title {
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .timeline-subtitle {
+      font-size: 1rem;
+      color: #bbb;
+      margin-bottom: 10px;
+    }
+
+    .timeline-description {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    /* Download button */
+    .download-btn {
+      display: inline-block;
+      margin: 40px auto;
+      background-color: #e50914;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      display: block;
+      text-align: center;
+      max-width: fit-content;
+    }
+
+    .download-btn:hover {
+      background-color: #b20710;
+    }
+
+    /* Back button */
+    .back-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      color: white;
+      background-color: #e50914;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #b20710;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      .timeline::after {
+        left: 20px;
+      }
+
+      .timeline-item {
+        padding-left: 50px;
+        padding-right: 20px;
+      }
+
+      .timeline-item::before {
+        left: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Back Button -->
+  <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Home</a>
+
+  <!-- Page Header -->
+  <header>
+    <h1>My Education Journey</h1>
+  </header>
+
+  <!-- Timeline Section -->
+  <div class="timeline">
+    <!-- University Entry -->
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-university"></i></div>
+      <div class="timeline-title">BSc Mechatronic Engineering</div>
+      <div class="timeline-subtitle">Jomo Kenyatta University of Agriculture and Technology | 2019 - 2024</div>
+      <div class="timeline-description">
+        Deep focus on AI, Machine Learning, Robotics, Control Systems, and Embedded Systems. A journey of blending mechanics with intelligence.
+      </div>
+    </div>
+
+    <!-- Certifications Entry -->
+    <div class="timeline-item">
+      <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+      <div class="timeline-title">Certifications & Extra Learning</div>
+      <div class="timeline-subtitle">Google, Coursera & Self-Study | Ongoing</div>
+      <div class="timeline-description">
+        Google AI & ML Foundations, Coursera Deep Learning Specialization, and hands-on projects in automation and data science.
+      </div>
+    </div>
+  </div>
+
+  <!-- Download Resume -->
+  <a class="download-btn" href="ALEX NGECHU MUIRURI - Resume.pdf" download>
+    <i class="fas fa-download"></i> Download My CV
+  </a>
+</body>
+</html>

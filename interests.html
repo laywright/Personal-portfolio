@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags for Character Encoding and Responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the Webpage -->
+    <title>Interests - Muiruri Alex</title>
+
+    <!-- Swiper.js CSS CDN for Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <!-- Internal CSS Styling -->
+    <style>
+        /* General body styling */
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page Header */
+        h1 {
+            color: #e50914;
+            font-size: 3rem;
+            text-align: center;
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Class to highlight keywords */
+        .highlight {
+            color: #e50914;
+            font-weight: bold;
+        }
+
+        /* Container for the interests section */
+        .interest-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+        }
+
+        /* Individual interest paragraph */
+        .interest-section {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Swiper container styling */
+        .swiper {
+            width: 90%;
+            height: 400px;
+            margin: 40px auto;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Swiper slide images */
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Navigation buttons for the swiper */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #e50914;
+        }
+
+        /* Active bullet pagination */
+        .swiper-pagination-bullet-active {
+            background: #e50914;
+        }
+
+        /* Back to home button styling */
+        .back-btn {
+            display: block;
+            width: max-content;
+            margin: 30px auto;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background-color: #e50914;
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        /* Hover effect for back button */
+        .back-btn:hover {
+            background-color: #b20710;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main heading -->
+    <h1>My Tech & Creative Interests</h1>
+
+    <!-- Image carousel using Swiper.js -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Each slide contains an image with alt text -->
+            <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1593642634315-48f5414c3ad9?auto=format&fit=crop&w=1000&q=80" alt="Coding Love"></div>
+            <div class="swiper-slide"><img src="https://plus.unsplash.com/premium_photo-1676637656198-e2bbf752103a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Automation Excitement"></div>
+            <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1000&q=80" alt="AI Passion"></div>
+            <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1716436329475-4c55d05383bb?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tech Innovation"></div>
+            <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1000&q=80" alt="Netflix UI Inspiration"></div>
+        </div>
+        <!-- Pagination and navigation controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Interests description -->
+    <div class="interest-container">
+        <div class="interest-section">
+            I'm Muiruri Alex — a passionate <span class="highlight">Mechatronics Engineer</span> and an aspiring <span class="highlight">Machine Learning Specialist</span>. What sets my soul on fire? The boundless universe of <span class="highlight">AI</span>, the thrill of solving complex problems with <span class="highlight">code</span>, and the beauty of merging mechanical systems with intelligent automation.
+        </div>
+        <div class="interest-section">
+            <!-- Fun emoji-enhanced bullets -->
+            🔧 I’m fascinated by smart robotics that mimic human behavior.<br>
+            🧠 I get a kick out of experimenting with deep learning models and seeing them make predictions.<br>
+            🎬 I love cinema not just for the storytelling but for how it's being revolutionized by data-driven recommendations and generative AI.
+        </div>
+        <div class="interest-section">
+            <!-- List of core tech interests -->
+            My professional interests revolve around:
+            <ul>
+                <li>🔍 Ethical & Explainable AI</li>
+                <li>🛠️ Building intelligent embedded systems</li>
+                <li>🚀 Leveraging Python for automation & data analysis</li>
+                <li>💡 Exploring tech that bridges human intuition with machine precision</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back button to homepage -->
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+    <!-- Swiper.js Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper with autoplay and navigation
+        const swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1, // Show 1 slide at a time
+            spaceBetween: 30, // Gap between slides
+            loop: true, // Enable continuous loop mode
+            autoplay: {
+                delay: 3000, // Delay between slides (ms)
+                disableOnInteraction: false, // Keep autoplay running even after user interaction
+            },
+            pagination: {
+                el: ".swiper-pagination", // Pagination element
+                clickable: true, // Enable bullet click
+            },
+            navigation: {
+                nextEl: ".swiper-button-next", // Next button
+                prevEl: ".swiper-button-prev", // Previous button
+            },
+        });
+    </script>
+</body>
+
+</html>
