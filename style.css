@@ -1,0 +1,99 @@
+/* General body styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Container for entire page content */
+.container {
+    padding: 50px;
+}
+
+/* Main heading style */
+h1 {
+    color: #e50914;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Flexbox layout for profile options */
+.profiles-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+/* Styling for each profile option */
+.profile {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    width: 180px;
+}
+
+/* Hover effect for profile boxes */
+.profile:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Icon styling within profiles */
+.profile i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Text label under each icon */
+.profile span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Theme toggle button styling (moon/sun icon) */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.theme-toggle:hover {
+    color: #e50914;
+}
+
+/* Light mode background and text color overrides */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Light mode for profile containers */
+body.light-mode .profile {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode hover effect */
+body.light-mode .profile:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Light mode theme icon color */
+body.light-mode .theme-toggle {
+    color: black;
+}
